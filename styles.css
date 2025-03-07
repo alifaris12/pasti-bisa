@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6b3535;
+    margin: 0;
+    padding: 0;
+}
+
+.team-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the boxes horizontally */
+}
+
+.team-member {
+    background-color: #b5c2f1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 25px;
+    width: 200px; /* Fixed width for each member box */
+    transition: transform 0.3s;
+    position: relative; /* Position relative for the image box */
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    width: 100%;
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 5px; /* Rounded corners */
+    border: 4px solid #FF69B4; /* Change border color to pink */
+    padding: px; /* Padding inside the border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for the image */
+}
+
+h3 {
+    color: #333; /* Darker color for better contrast */
+    margin: 10px 0;
+    font-size: 1.2em; /* Slightly larger font size */
+}
+
+p {
+    color: #000000; /* Darker text for better readability */
+    font-size: 1em; /* Adjust font size */
+}
+
+a {
+    text-decoration: none;
+    color: #f400ff; /* Consistent link color */
+    font-size: 18px;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+a:hover {
+    color: #8a00b3; /* Darker shade on hover */
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
+
